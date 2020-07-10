@@ -4,15 +4,11 @@ class Modal {
 
         this.closeIcon = document.querySelector('.modal__close');
         this.modal = document.querySelector('.modal');
-        this.openModalButtons = document.querySelectorAll('.open-modal');
 
         this.events();
     }
 
     events() {
-        // listen for open click
-        this.openModalButtons.forEach(el => el.addEventListener('click', (e) => this.openModal(e)));
-
         // listen for close click
         this.closeIcon.addEventListener('click', () => this.closeModal());
 
@@ -22,7 +18,7 @@ class Modal {
 
     closeModal(){
         this.modal.classList.remove('modal--is-visible');
-    }
+    } 
 
     injectHTML() {
         document.body.insertAdjacentHTML('beforeend', `
@@ -49,8 +45,7 @@ class Modal {
         if(e.keyCode == 27) this.closeModal();
     }
 
-    openModal(e) {
-        e.preventDefault();
+    openModal() {
         this.modal.classList.add('modal--is-visible');
     }
 }
