@@ -35,7 +35,7 @@ class ClientArea {
     sendRequest(){
         Axios
           .post('https://hungry-sammet-bf4bed.netlify.app/.netlify/functions/secret-area', {
-              password: this.input.value
+              password: this.field.value
           })
           .then(response => {
               this.form.remove();
