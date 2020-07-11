@@ -4,8 +4,10 @@ import MobileMenu from './modules/MobileMenu';
 import ReviewOnScroll from './modules/RevealOnScroll';
 import RevealOnScroll from './modules/RevealOnScroll';
 import StickyHeader from './modules/StickyHeader';
+import ClientArea from './modules/ClientArea';
 
 let modal;
+new ClientArea();
 new StickyHeader();
 new MobileMenu();
 new RevealOnScroll(document.querySelectorAll('.feature-item'), 75);

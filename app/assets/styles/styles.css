@@ -5,6 +5,7 @@
 @import 'base/_global';
 
 @import 'modules/_btn';
+@import 'modules/_client-area.css';
 @import 'modules/_feature-item';
 @import 'modules/_generic-content-container';
 @import 'modules/_headline';
